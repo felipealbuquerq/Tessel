@@ -5,7 +5,7 @@ var tessel = require('tessel');
 // Truthy initial state sets the pin high
 // Falsy sets it low.
 var led1 = tessel.led[0].output(1);
-var led2 = tessel.led[1].output(0);
+var led2 = tessel.led[1].output(1);
 
 setInterval(function () {
     console.log("I'm blinking! (Press CTRL + C to stop)");
